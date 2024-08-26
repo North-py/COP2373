@@ -1,0 +1,27 @@
+﻿Programming Exercise 1A
+ 
+Name: Anthony North
+Date Created: 8/26/2024
+ 
+Program Description:
+This application will ask a user how many tickets they would like to purchase out of 20 tickets but they will be limited to 4 tickets per person. If the person tries to buy more than 4 tickets the application will inform the user they may only buy 4 tickets at a time. The application also will track the number of buyers throughout the ticket buying process and once all tickets are sold display the number of total buyers.
+ Logical Steps: 
+1. Initialize Variables
+2. Start the loop
+3. Prompt for user input
+4. Validate ticket request
+5. Process the purchase
+6. End the loop
+7. Display final information
+8. Call main function 
+Variables: 
+1. Total_tickets: represents the total number tickets available for sale (up to 20)
+2. Ticket_limit: represents the number of tickets allowed to be sold per person (up to 4)
+3. Total_buyers: counts and tracks the total number of buyers through the application and will display the information at the end
+Functions:
+* Function name: Main
+* Description: Manages the overall ticket selling process and initializes the ticket and buyer counters and handles user input, validate requests, and process ticket sales.Continues until all tickets are sold.
+* Parameters: None
+* Returns: This function does not return any value but displays out and updating state
+ Link to repository:
+https://github.com/North-py/COP2373
