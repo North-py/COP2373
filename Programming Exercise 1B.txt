@@ -1,0 +1,34 @@
+﻿Programming Exercise 1B
+
+
+Name: Anthony North
+Date Created: 8/27/2024
+
+
+Program Description: 
+The program simulates the magic 8 ball toy, by loading random yes or no answers off a .txt file named 8ball_responeses. So a user would ask a basic yes or no question and receive an answer from the file and can continue until done using the program.
+
+
+Logical Steps:  
+1. Load Responses
+2. Start Loop
+3. Ask Question
+4. Exit Condition
+5. Select Response
+6. Display Response
+7. Repeat or Exit
+Variables:  
+1. Ball_responses: Parameter for the get_responses_from_file function, representing the file path.
+2. File: File object used in get_responses_from_file to read from the file.
+3. Responses: List of responses read from the file.
+4. Question: User input for asking a yes/no question.
+5. Response: Randomly selected response from the responses list.
+Functions:
+* Function Name: get_responses_from_file(ball_responses)
+   Description: This function takes a file path as an argument, reads the file, and returns a list of responses.
+   Parameters: Represents the file path (as a string) from which the function reads the responses.
+   Returns: The list of responses that the program randomly chooses from
+* Function Name: magic_8_ball()
+Description: This function runs the main Magic 8-Ball simulation. It loads responses from a file, continuously prompts the user for input, and prints a random response until the user decides to quit.
+Parameters: Does not have parameters, it uses the file path to run
+Returns: Prompts the user to ask a yes/no questions or to quit (not really a return just using the users response)
