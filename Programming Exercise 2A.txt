@@ -1,0 +1,56 @@
+﻿Programming Exercise 2A
+
+
+
+
+Name: Anthony North
+Date Created: 9/14/2024
+
+
+
+
+Program Description: 
+This Python script checks if an email is spam by looking for common spam words. It gives a spam score based on how many of these words are found and rates the spam risk as Low, Moderate, High, or Very High. It also lists the words that triggered the score.
+
+
+
+
+Logical Steps:  
+1. Define Spam Keywords
+2. Function to Calculate Spam Score
+3. Function to Rate Spam Likelihood
+4. Main Function
+5. Program Execution
+Variables:  
+1. spam_keywords: List of keywords used to detect spam in emails.
+2. email_message: User-provided email content to analyze for spam.
+3. found_keywords: List of detected spam keywords in the email.
+4. email_message_lower: Lowercase version of the email for case-insensitive matching.
+5. spam_score: Score used to determine the spam likelihood rating.
+6. spam_likelihood: Rating of spam likelihood based on the score.
+7. keyword: Used to print each keyword from the found_keywords list.
+Functions:
+Function Name: calculate_spam_score(email_message):
+Description: Analyzes the email message for spam keywords. Returns the spam score and a list of found keywords.
+Parameters: email_message (str): The email content to check.
+Returns: spam_score (int): The number of spam keywords found.
+found_keywords (list): Keywords from spam_keywords found in the email message.
+Function Name: rate_spam_likelihood(spam_score):
+
+
+Description: Determines the likelihood of the email being spam based on the spam score. Returns a rating as a string.
+Parameters: spam_score (int): The spam score to assess.
+Returns: spam_likelihood (str): Rating of spam likelihood ("Low", "Moderate", "High", "Very High").
+
+
+Function Name: main():
+Description: The main function that orchestrates the spam checking process. Prompts the user for an email message, calculates the spam score, rates the spam likelihood, and prints the results.
+Parameters: None.
+Returns: None (prints results to the console).
+
+
+
+
+
+
+https://github.com/North-py/COP2373
