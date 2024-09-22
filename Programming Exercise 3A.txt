@@ -1,0 +1,41 @@
+﻿Programming Exercise 3A
+Name: Anthony North
+Date Created: 9/22/2024
+Program Description:
+This program calculates and analyzes monthly expenses by prompting the user to input various types of expenses and their corresponding amounts. It helps users manage their finances by providing the total expense, the highest expense, and the lowest expense.
+Logical Steps:
+1. Prompt the user to enter the type of expense or indicate they are done.
+2. Validate and capture the amount associated with each expense type.
+3. Store each expense as a tuple of (expense type, amount) in a list.
+4. Calculate the total expense using a reduction method.
+5. Identify the highest and lowest expenses using reduction methods.
+6. Display the total, highest, and lowest expenses to the user.
+Variables:
+1. expenses: A list of tuples where each tuple contains the type of expense and the corresponding amount entered by the user.
+2. expense_type: A string representing the type of expense entered by the user.
+3. amount: A float representing the monetary value of the entered expense.
+4. total_expense: A float that holds the calculated total of all expenses.
+5. highest_expense: A tuple containing the type and amount of the highest expense.
+6. lowest_expense: A tuple containing the type and amount of the lowest expense.
+Functions:
+1. Function Name: get_expenses
+Description: Prompts the user for expenses and returns a list of expense tuples.
+Parameters: None.
+Returns: List of tuples containing expense types and amounts.
+2. Function Name: calculate_total
+Description: Calculates the total of all expenses in the list.
+Parameters: expenses (list of tuples): A list containing expense types and amounts.
+Returns: Float: The total amount of all expenses.
+3. Function Name: find_highest_expense
+Description: Determines the highest expense from the list.
+Parameters: expenses (list of tuples): A list containing expense types and amounts.
+Returns: Tuple: The expense type and amount of the highest expense.
+4. Function Name: find_lowest_expense
+Description: Determines the lowest expense from the list.
+Parameters: expenses (list of tuples): A list containing expense types and amounts.
+Returns: Tuple: The expense type and amount of the lowest expense.
+5. Function Name: main
+Description: Orchestrates the flow of the program, calling other functions and displaying results.
+Parameters: None.
+Returns: None.
+https://github.com/North-py/COP2373
