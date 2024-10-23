@@ -1,0 +1,33 @@
+﻿Program 7A
+Name: Anthony North
+Date Created: 10/23/2024
+________________
+
+
+Program Description:
+This program allows users to input any number of sentences, including those that begin with numbers. The purpose is to collect and display these sentences, providing a count of how many were entered. This solution addresses the need for a simple interface to gather and summarize user input.
+________________
+
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: main
+Description: The main function that handles user input, stores sentences, and displays the results.
+Parameters: None
+Variables:
+* sentences: List[str] - A list to store the sentences entered by the user.
+* sentence: str - A variable to capture each user input.
+Logical Steps:
+1. Initialize an empty list called sentences.
+2. Prompt the user to enter sentences until they type "exit".
+3. If the user input is "exit", break the loop.
+4. Append each valid sentence to the sentences list.
+5. After exiting the loop, display each sentence with its corresponding number.
+6. Print the total number of sentences entered.
+Returns:
+None (the function directly outputs results to the console).
+Logical Steps:
+1. main is called to execute the program logic.
+________________
+
+
+Link to your repository: [www.yourrepository.com]
