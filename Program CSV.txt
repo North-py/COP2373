@@ -1,0 +1,45 @@
+﻿Program CSV
+Name: Anthony North
+Date Created: 10/24/2024
+Program Description:
+This program allows users to input and store student grades in a CSV file. The user is prompted to enter the number of students, followed by their first and last names, and grades for three exams. Once the data is collected, it is written to a file named grades.csv. The program also reads the data from the CSV file and displays it in a formatted manner.
+
+
+Logical Steps:
+1. Prompt the user for the number of students to enter.
+2. Open a CSV file for writing and create a writer object.
+3. Write the header row to the CSV file.
+4. Loop for the number of students, collecting each student's first name, last name, and exam grades.
+5. Write each student's data as a new row in the CSV file.
+6. Close the file and confirm data has been written.
+7. Open the CSV file for reading and create a reader object.
+8. Read the header and display it.
+9. Loop through the CSV file and print each student's data in a formatted manner.
+
+
+Variables:
+1. num_students: Integer representing the number of students to be entered.
+2. first_name: String representing the first name of the student.
+3. last_name: String representing the last name of the student.
+4. exam1: Integer representing the grade for Exam 1.
+5. exam2: Integer representing the grade for Exam 2.
+6. exam3: Integer representing the grade for Exam 3.
+7. header: List representing the header row of the CSV file.
+
+
+Functions:
+1. Function Name: write_grades()
+Description: Prompts the user to enter student information and writes it to grades.csv.
+Parameters: None
+Returns: None
+2. Function Name: read_grades()
+Description: Reads the data from grades.csv and prints it in a formatted table.
+Parameters: None
+Returns: None
+3. Function Name: main()
+Description: Orchestrates the flow of the program by calling write_grades() and read_grades().
+Parameters: None
+Returns: None
+
+
+Link to repository: https://github.com/North-py/COP2373
