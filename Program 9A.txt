@@ -1,0 +1,71 @@
+﻿Program 9A
+
+
+________________
+
+
+Name: Anthony North
+Date Created: 11/03/2024
+________________
+
+
+Program Description:
+This program implements a BankAcct class that simulates a bank account management system. It allows users to create an account with a specific name, account number, initial amount, and interest rate. The class provides methods for depositing and withdrawing funds, adjusting the interest rate, calculating interest over a specified number of days, and retrieving the current balance. The primary purpose of this program is to help users manage their bank accounts and understand how interest accrues over time.
+
+
+Logical Steps:
+1. Account Initialization: Create an instance of the BankAcct class with the user's name, account number, initial amount, and interest rate.
+2. Display Account Information: Use the __str__ method to print the account details, including the balance and interest rate.
+3. Deposit Funds: Allow the user to deposit money into the account and update the balance accordingly.
+4. Withdraw Funds: Enable the user to withdraw money from the account, ensuring sufficient funds are available before proceeding.
+5. Calculate Interest: Provide functionality to calculate and return the interest earned based on the current balance and specified number of days.
+6. Adjust Interest Rate: Allow the user to change the interest rate associated with their account.
+
+
+Variables:
+1. name: Stores the name of the account holder.
+2. account_number: Holds the unique identifier for the bank account.
+3. amount: Represents the current balance of the account.
+4. interest_rate: Stores the annual interest rate as a percentage.
+
+
+Functions:
+1. Function Name: __init__
+Description: Initializes a new instance of the BankAcct class with the account holder's details and initial balance.
+Parameters:
+   * name: (str) The name of the account holder.
+   * account_number: (str) The unique account number.
+   * initial_amount: (float) The initial balance of the account.
+   * interest_rate: (float) The annual interest rate as a percentage.
+Returns: None
+      2. Function Name: adjust_interest_rate
+Description: Updates the account's interest rate.
+Parameters:
+         * new_rate: (float) The new interest rate to be set.
+Returns: None
+            3. Function Name: withdraw
+Description: Withdraws a specified amount from the account, ensuring there are sufficient funds.
+Parameters:
+               * amount: (float) The amount to withdraw from the account.
+Returns: None
+                  4. Function Name: deposit
+Description: Deposits a specified amount into the account, increasing the balance.
+Parameters:
+                     * amount: (float) The amount to deposit into the account.
+Returns: None
+                        5. Function Name: calculate_interest
+Description: Calculates the interest earned over a specified number of days based on the current balance and interest rate.
+Parameters:
+                           * days: (int) The number of days for which to calculate interest.
+Returns: (float) The calculated interest amount.
+                              6. Function Name: get_balance
+Description: Retrieves the current balance of the account.
+Parameters: None
+Returns: (float) The current balance of the account.
+                              7. Function Name: __str__
+Description: Returns a formatted string representation of the account details.
+Parameters: None
+Returns: (str) A string containing the account holder's name, account number, balance, and interest rate.
+
+
+Link to repository: https://github.com/North-py/COP2373
