@@ -1,0 +1,78 @@
+﻿Program 11A
+
+
+Name: Anthony North
+Date Created: 11/16/2024
+
+
+Program Description:
+This program simulates a simple Poker game where a deck of cards is shuffled and five cards are dealt to the player. The player is then prompted to select which cards they want to replace, and the program deals new cards to replace the selected ones. The final hand after the card draw is displayed.
+The program is useful for demonstrating basic card game mechanics like dealing, card selection, and hand management in Python. It also allows for future expansion, such as implementing Poker hand rankings, multiple rounds, or a full game with multiple players.
+
+
+Logical Steps:
+1. Initialize the deck and deal the hand:
+   * Create a deck of 52 cards by combining all suits and ranks.
+   * Shuffle the deck to randomize the card order.
+   * Deal five cards from the shuffled deck to simulate a Poker hand.
+2. Prompt the user for card replacements:
+   * Display the current hand to the user.
+   * Ask the user to input the positions (1 to 5) of the cards they want to replace, separated by commas.
+   * Convert the user input into a list of indices.
+3. Replace selected cards:
+   * For each card position provided by the user, replace the corresponding card in the hand with a new card drawn from the deck.
+   * Ensure that the indices are valid (between 1 and 5).
+4. Display the final hand:
+   * After replacing the selected cards, display the updated hand to the user.
+
+
+Variables:
+1. deck: A Deck object that contains the shuffled set of 52 cards.
+   * Type: Deck
+   * Description: This object manages the deck of cards, performing shuffle and deal operations.
+2. hand: A list that holds the player's current hand of 5 cards.
+   * Type: list[Card]
+   * Description: The player's current set of 5 cards that are dealt from the deck.
+3. replacements: A string entered by the user to specify which cards they want to replace.
+   * Type: str
+   * Description: A comma-separated list of card positions to replace (e.g., "1, 3").
+4. replacement_indices: A list of integers representing the zero-based indices of the cards to be replaced.
+   * Type: list[int]
+   * Description: Converted list of indices from the user input for which cards to replace.
+
+
+Functions:
+1. Function Name: display_hand
+Description: Displays the current hand of cards in a human-readable format.
+Parameters:
+   * hand (list[Card]): A list of Card objects representing the current hand.
+Returns:
+   * str: A formatted string that lists the cards in the hand.
+      2. Function Name: poker_game
+Description: Main game function that controls the flow of the game: dealing cards, prompting for replacements, and displaying the final hand.
+Parameters:
+         * None
+Returns:
+         * None: The function runs the game without returning a value. It prints the results to the screen.
+            3. Function Name: Deck.__init__
+Description: Initializes the deck by creating 52 cards, shuffling them, and storing them in a list.
+Parameters:
+               * None
+Returns:
+               * None: Initializes the deck object and prepares it for use.
+                  4. Function Name: Deck.deal
+Description: Deals a specified number of cards from the deck.
+Parameters:
+                     * num_cards (int): The number of cards to deal.
+Returns:
+                     * list[Card]: A list of Card objects representing the dealt cards.
+                        5. Function Name: Card.__str__
+Description: Returns a string representation of a single card in the format "rank of suit".
+Parameters:
+                           * None
+Returns:
+                           * str: A string in the format "{rank} of {suit}" (e.g., "2 of Hearts").
+
+
+Link to Repository:
+Example: https://github.com/North-py/COP2373
