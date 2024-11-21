@@ -1,0 +1,49 @@
+﻿Name: Anthony North
+Date Created: November 21, 2024
+________________
+
+
+Program Description:
+This program calculates the grades statistics of students for three exams. It stores the student names and grades in a CSV file, then reads that data into a NumPy array. The program computes various statistics for each exam, such as mean, median, standard deviation, and range. Additionally, it calculates pass/fail statistics for each exam based on a passing grade of 60.
+________________
+
+
+Logical Steps:
+1. Store the student grades in a CSV file: Prepopulate data for 10 students and their grades for 3 exams in grades.csv.
+2. Read the data from the CSV file: Extract and store the grades of each student in a NumPy array for analysis.
+3. Calculate individual statistics for each exam: Compute the mean, median, standard deviation, minimum, and maximum for each exam.
+4. Calculate overall statistics for all exams: Combine all exam data and compute statistics for all grades collectively.
+5. Calculate pass/fail statistics: Determine how many students passed or failed each exam based on a passing grade of 60 or above.
+6. Display results: Print out all the calculated statistics and pass/fail counts for each exam.
+________________
+
+
+Variables:
+1. students: A predefined list of 10 students, with their grades for 3 exams.
+2. grades: A 2D NumPy array containing the grades for each student across all exams.
+3. passing_grades: A boolean NumPy array representing whether a student passed each exam.
+4. total_passed: The total number of passing grades across all exams.
+________________
+
+
+Functions:
+1. Function Name: write_grades
+Description: Writes a predefined list of student names and their exam grades into grades.csv.
+Parameters: None
+Returns: None
+2. Function Name: read_grades
+Description: Reads the grades from grades.csv and returns them as a NumPy array.
+Parameters: None
+Returns: np.array: An array of grades for all students across all exams.
+3. Function Name: calculate_statistics
+Description: Calculates the mean, median, standard deviation, minimum, and maximum for each exam and for all exams combined.
+Parameters: grades (np.array): The grades of all students.
+Returns: None
+4. Function Name: pass_fail_statistics
+Description: Calculates and prints the number of students passing or failing each exam and the overall pass percentage.
+Parameters: grades (np.array): The grades for all students across all exams.
+Returns: None
+________________
+
+
+Link to repository: https://github.com/North-py/COP2373
